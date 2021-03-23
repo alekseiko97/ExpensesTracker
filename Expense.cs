@@ -4,8 +4,8 @@
     {
 
         public string Name { get; }
-        public double Price { get; }
-        public int Quantity { get; }
+        public double Price { get; set; }
+        public int Quantity { get; set; }
 
         public Expense(string name, double price, int quantity)
         {
@@ -16,7 +16,7 @@
 
         public override string ToString()
         {
-            return $"{Name}: {Price} x {Quantity}";
+            return $"{Name}: {Price}€ x {Quantity}";
         }
     }
 }
